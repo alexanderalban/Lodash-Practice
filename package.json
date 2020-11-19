@@ -1,0 +1,22 @@
+{
+  "name": "lodash-practice",
+  "version": "1.0.0",
+  "description": "Lodash practice for ACA 211",
+  "main": "myscripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderalban/Lodash-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderalban/Lodash-Practice/issues"
+  },
+  "homepage": "https://github.com/alexanderalban/Lodash-Practice#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
