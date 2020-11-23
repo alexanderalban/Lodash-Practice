@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lodash Practice</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>Lodash!</h1>
+      <h4>A Different Flavor of JavaScript</h4>
+    </header>
+    <main>
+      <section id="what-section" class="content">
+        <h2>What is Lodash?</h2>
+        <p>
+          JavaScript in its original form can (at times) be a bit tough for a
+          person to know what to code in order to accomplish the goal that
+          person has in mind. It can also be tedious at times to write out all
+          of your commonly used functions, loops, and such over and over again.
+        </p>
+        <p>
+          Enter, Lodash. Lodash is what's referred to as a "reference library"
+          for the JavaScript programming language. It's a collection of
+          pre-written code that allows coders to work faster, smarter, and with
+          consistency. Here are some this particular library's capabilities:
+        </p>
+        <h3>Our Data</h3>
+        <p>
+          So, before we get too ahead of ourselves we're going to need some data
+          to manipulate. Real world examples are always ideal, so...Oh! I know!
+          Let's solve a mystery!
+        </p>
+        <br />
+      </section>
+      <section id="office-section">
+        <h3>The Case of the Sneaky Sandwich Smuggler</h3>
+        <h6>*working title</h6>
+        <p>
+          Someone has been taking people's sandwiches from the office
+          refrigerator! And that just won't do. No sir.<br /><br />
+          We'll need to put a team of people from the office together to capture
+          that crafty cold cut cat burglar (the detectives stopped returning our
+          calls). First, we'll need to get an array of everyone that was in the
+          office!
+        </p>
+        <button id="office-button" onclick="showWorkerNameArray()">
+          Show our suspects!
+        </button>
+        <section id="office-home"></section>
+      </section>
+      <section id="team-section">
+        <h3>_.sampleSize</h3>
+        <p>
+          Now we know who all was in the office! Excellent. Now we need a team.
+          But who to choose? Ah, there's no time! A sandwich may get stolen
+          while we debate! Let's pick five workers at random using Lodash's
+          _.sampleSize:
+        </p>
+        <button id="team-button" onclick="getMysteryTeam()">
+          Choose our team!
+        </button>
+        <section id="team-home"></section>
+      </section>
+      <section id="chunk-section">
+        <h3>_.chunk</h3>
+        <p>
+          Okay team, we've got a lot of people to interview and not a lot of
+          time (lunch is on the line!) Hmm, we've got fifty people to interview,
+          so let's divide everyone up into groups of ten using the Lodash
+          method, _.chunk (separated by little squares for ease of reading):
+        </p>
+        <button id="chunk-button" onclick="divideAndConquer()">
+          Split the Suspects!
+        </button>
+        <section id="chunk-home"></section>
+      </section>
+      <section id="reverse-section">
+        <h3>_.reverse</h3>
+        <p>
+          They're still not cracking! Hmm, maybe they're talking to each other,
+          getting their stories straight. Let's flip the group around with
+          _.reverse, see if that shakes them up!
+        </p>
+        <button id="reverse-button" onclick="reverseWorkers()">Reverse!</button>
+        <section id="reverse-home"></section>
+      </section>
+      <section id="shuffle-section">
+        <h3>_.shuffle</h3>
+        <p>
+          Well that didn't work. Oh! Of course! We just reversed the order. Any
+          conspirators would still be able to talk to each other! Let's really
+          get them separated using _.shuffle!
+        </p>
+        <button id="shuffle-button" onclick="shuffleWorkers()">Shuffle!</button>
+        <section id="shuffle-home"></section>
+      </section>
+      <section id="without-section">
+        <h3>_.without</h3>
+        <p>
+          New information has come about! We found a list of sandwich theft
+          crimes from all around the city and a few names kept cropping up!
+          Maybe they have more information than they were letting on, eh? The
+          names in question were "John", "Cody", Allison, "Eric", "Jenny",
+          "Ann", "Tina", "Jim", "Ryan" and "James". So, if any of those names
+          are on our suspect list, we can remove them the group for extra
+          interrogation. Let's let the group know that we will be splitting them
+          up, eh?
+        </p>
+        <button id="without-button" onclick="removeSome()">
+          Remove suspects!
+        </button>
+        <section id="without-home"></section>
+        <section id="solve-section">
+          <h3>Mystery Solved!</h3>
+          <p>
+            A confession! Threatening to separate them all worked, and we now
+            know who took the sandwiches! (And who's now buying us all lunch.)
+            See the answer below!
+          </p>
+          <button id="solve-button" onclick="solveMystery()">
+            Solve the Mystery!
+          </button>
+          <section id="solve-home"></section>
+        </section>
+      </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
     <script src="myscripts.js"></script>
-</body>
+  </body>
 </html>
